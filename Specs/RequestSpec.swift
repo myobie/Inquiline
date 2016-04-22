@@ -39,6 +39,10 @@ describe("Request") {
   $0.it("has a content length header helper") {
     try equal(request.contentLength, 11)
   }
+  
+  $0.it("has a cache control header helper") {
+    try equal(request.cacheControl, "no-cache")
+  }
 
   $0.it("has an accept header helper") {
     try equal(request.accept, "application/json")
