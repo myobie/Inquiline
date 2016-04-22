@@ -42,6 +42,11 @@ extension RequestType {
   public var contentType:String? {
     return self["Content-Type"]
   }
+  
+  /// Returns the Cache-Control header
+  public var cacheControl:String? {
+    return self["Cache-Control"]
+  }
 
   /// Returns the Content-Length header
   public var contentLength:Int? {
